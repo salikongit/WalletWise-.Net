@@ -1,0 +1,108 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -------------------< com.walletwise:walletwise-api >--------------------
+[INFO] Building WalletWise API 0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- clean:3.3.2:clean (default-clean) @ walletwise-api ---
+[INFO] Deleting E:\FinalProject-DOTNET to spring\FinalProject\WalletWise.Spring\target
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ walletwise-api ---
+[INFO] Copying 1 resource from src\main\resources to target\classes
+[INFO] Copying 1 resource from src\main\resources to target\classes
+[INFO] 
+[INFO] --- compiler:3.8.1:compile (default-compile) @ walletwise-api ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 91 source files to E:\FinalProject-DOTNET to spring\FinalProject\WalletWise.Spring\target\classes
+[INFO] -------------------------------------------------------------
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /E:/FinalProject-DOTNET to spring/FinalProject/WalletWise.Spring/src/main/java/com/walletwise/api/service/TransactionService.java:[39,41] cannot find symbol
+  symbol:   method getIncomeSource()
+  location: variable incomeDto of type com.walletwise.api.dto.IncomeDto
+[ERROR] /E:/FinalProject-DOTNET to spring/FinalProject/WalletWise.Spring/src/main/java/com/walletwise/api/service/TransactionService.java:[40,35] cannot find symbol
+  symbol:   method getAmount()
+  location: variable incomeDto of type com.walletwise.api.dto.IncomeDto
+[ERROR] /E:/FinalProject-DOTNET to spring/FinalProject/WalletWise.Spring/src/main/java/com/walletwise/api/service/TransactionService.java:[48,18] cannot find symbol
+  symbol:   method setIncomeId(java.lang.Integer)
+  location: variable incomeDto of type com.walletwise.api.dto.IncomeDto
+[ERROR] /E:/FinalProject-DOTNET to spring/FinalProject/WalletWise.Spring/src/main/java/com/walletwise/api/service/TransactionService.java:[73,37] constructor IncomeDto in class com.walletwise.api.dto.IncomeDto cannot be applied to given types;
+  required: java.lang.Integer,java.lang.String,java.math.BigDecimal,java.time.LocalDate,java.lang.String,java.lang.String
+  found:    no arguments
+  reason: actual and formal argument lists differ in length
+[ERROR] /E:/FinalProject-DOTNET to spring/FinalProject/WalletWise.Spring/src/main/java/com/walletwise/api/service/TransactionService.java:[74,24] cannot find symbol
+  symbol:   method setIncomeId(java.lang.Integer)
+  location: variable dto of type com.walletwise.api.dto.IncomeDto
+[ERROR] /E:/FinalProject-DOTNET to spring/FinalProject/WalletWise.Spring/src/main/java/com/walletwise/api/service/TransactionService.java:[75,24] cannot find symbol
+  symbol:   method setIncomeSource(java.lang.String)
+  location: variable dto of type com.walletwise.api.dto.IncomeDto
+[ERROR] /E:/FinalProject-DOTNET to spring/FinalProject/WalletWise.Spring/src/main/java/com/walletwise/api/service/TransactionService.java:[76,24] cannot find symbol
+  symbol:   method setAmount(java.math.BigDecimal)
+  location: variable dto of type com.walletwise.api.dto.IncomeDto
+[ERROR] /E:/FinalProject-DOTNET to spring/FinalProject/WalletWise.Spring/src/main/java/com/walletwise/api/dto/IncomeDto.java:[17,13] cannot find symbol
+  symbol: variable description
+[ERROR] /E:/FinalProject-DOTNET to spring/FinalProject/WalletWise.Spring/src/main/java/com/walletwise/api/dto/IncomeDto.java:[18,13] cannot find symbol
+  symbol: variable category
+[ERROR] /E:/FinalProject-DOTNET to spring/FinalProject/WalletWise.Spring/src/main/java/com/walletwise/api/dto/IncomeDto.java:[30,16] cannot find symbol
+  symbol:   variable description
+  location: class com.walletwise.api.dto.IncomeDto
+[ERROR] /E:/FinalProject-DOTNET to spring/FinalProject/WalletWise.Spring/src/main/java/com/walletwise/api/dto/IncomeDto.java:[34,13] cannot find symbol
+  symbol: variable description
+[ERROR] /E:/FinalProject-DOTNET to spring/FinalProject/WalletWise.Spring/src/main/java/com/walletwise/api/dto/IncomeDto.java:[38,16] cannot find symbol
+  symbol:   variable category
+  location: class com.walletwise.api.dto.IncomeDto
+[ERROR] /E:/FinalProject-DOTNET to spring/FinalProject/WalletWise.Spring/src/main/java/com/walletwise/api/dto/IncomeDto.java:[42,13] cannot find symbol
+  symbol: variable category
+[INFO] 13 errors 
+[INFO] -------------------------------------------------------------
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  7.370 s
+[INFO] Finished at: 2026-02-01T01:14:49+05:30
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.8.1:compile (default-compile) on project walletwise-api: Compilation failure: Compilation failure: 
+[ERROR] /E:/FinalProject-DOTNET to spring/FinalProject/WalletWise.Spring/src/main/java/com/walletwise/api/service/TransactionService.java:[39,41] cannot find symbol
+[ERROR]   symbol:   method getIncomeSource()
+[ERROR]   location: variable incomeDto of type com.walletwise.api.dto.IncomeDto
+[ERROR] /E:/FinalProject-DOTNET to spring/FinalProject/WalletWise.Spring/src/main/java/com/walletwise/api/service/TransactionService.java:[40,35] cannot find symbol
+[ERROR]   symbol:   method getAmount()
+[ERROR]   location: variable incomeDto of type com.walletwise.api.dto.IncomeDto
+[ERROR] /E:/FinalProject-DOTNET to spring/FinalProject/WalletWise.Spring/src/main/java/com/walletwise/api/service/TransactionService.java:[48,18] cannot find symbol
+[ERROR]   symbol:   method setIncomeId(java.lang.Integer)
+[ERROR]   location: variable incomeDto of type com.walletwise.api.dto.IncomeDto
+[ERROR] /E:/FinalProject-DOTNET to spring/FinalProject/WalletWise.Spring/src/main/java/com/walletwise/api/service/TransactionService.java:[73,37] constructor IncomeDto in class com.walletwise.api.dto.IncomeDto cannot be applied to given types;
+[ERROR]   required: java.lang.Integer,java.lang.String,java.math.BigDecimal,java.time.LocalDate,java.lang.String,java.lang.String
+[ERROR]   found:    no arguments
+[ERROR]   reason: actual and formal argument lists differ in length
+[ERROR] /E:/FinalProject-DOTNET to spring/FinalProject/WalletWise.Spring/src/main/java/com/walletwise/api/service/TransactionService.java:[74,24] cannot find symbol
+[ERROR]   symbol:   method setIncomeId(java.lang.Integer)
+[ERROR]   location: variable dto of type com.walletwise.api.dto.IncomeDto
+[ERROR] /E:/FinalProject-DOTNET to spring/FinalProject/WalletWise.Spring/src/main/java/com/walletwise/api/service/TransactionService.java:[75,24] cannot find symbol
+[ERROR]   symbol:   method setIncomeSource(java.lang.String)
+[ERROR]   location: variable dto of type com.walletwise.api.dto.IncomeDto
+[ERROR] /E:/FinalProject-DOTNET to spring/FinalProject/WalletWise.Spring/src/main/java/com/walletwise/api/service/TransactionService.java:[76,24] cannot find symbol
+[ERROR]   symbol:   method setAmount(java.math.BigDecimal)
+[ERROR]   location: variable dto of type com.walletwise.api.dto.IncomeDto
+[ERROR] /E:/FinalProject-DOTNET to spring/FinalProject/WalletWise.Spring/src/main/java/com/walletwise/api/dto/IncomeDto.java:[17,13] cannot find symbol
+[ERROR]   symbol: variable description
+[ERROR] /E:/FinalProject-DOTNET to spring/FinalProject/WalletWise.Spring/src/main/java/com/walletwise/api/dto/IncomeDto.java:[18,13] cannot find symbol
+[ERROR]   symbol: variable category
+[ERROR] /E:/FinalProject-DOTNET to spring/FinalProject/WalletWise.Spring/src/main/java/com/walletwise/api/dto/IncomeDto.java:[30,16] cannot find symbol
+[ERROR]   symbol:   variable description
+[ERROR]   location: class com.walletwise.api.dto.IncomeDto
+[ERROR] /E:/FinalProject-DOTNET to spring/FinalProject/WalletWise.Spring/src/main/java/com/walletwise/api/dto/IncomeDto.java:[34,13] cannot find symbol
+[ERROR]   symbol: variable description
+[ERROR] /E:/FinalProject-DOTNET to spring/FinalProject/WalletWise.Spring/src/main/java/com/walletwise/api/dto/IncomeDto.java:[38,16] cannot find symbol
+[ERROR]   symbol:   variable category
+[ERROR]   location: class com.walletwise.api.dto.IncomeDto
+[ERROR] /E:/FinalProject-DOTNET to spring/FinalProject/WalletWise.Spring/src/main/java/com/walletwise/api/dto/IncomeDto.java:[42,13] cannot find symbol
+[ERROR]   symbol: variable category
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException

@@ -1,0 +1,118 @@
+####################################
+# GLOBAL / SECRETS
+####################################
+.env
+.env.*
+*.env
+*.log
+.DS_Store
+
+####################################
+# FRONTEND (React / Vite / Next / Node)
+####################################
+node_modules/
+dist/
+build/
+frontend/node_modules/
+frontend/dist/
+frontend/build/
+frontend/.env
+frontend/.env.*
+
+####################################
+# VISUAL STUDIO / DOTNET
+####################################
+
+# User-specific files
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Build results
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+build/
+bld/
+[Bb]in/
+[Oo]bj/
+
+# Visual Studio cache
+.vs/
+
+# .NET Core
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# NuGet
+*.nupkg
+*.snupkg
+**/packages/*
+!**/packages/build/
+*.nuget.props
+*.nuget.targets
+
+# ASP.NET config (SECRETS)
+appsettings.json
+appsettings.Development.json
+appsettings.Production.json
+appsettings.*.json
+
+####################################
+# SPRING BOOT / JAVA
+####################################
+target/
+.mvn/
+.classpath
+.project
+.settings/
+
+# Spring config (SECRETS)
+application.properties
+application.yml
+application-*.yml
+application-*.properties
+
+####################################
+# IDEs
+####################################
+.idea/
+.vscode/
+_ReSharper*/
+*.DotSettings.user
+*.sln.iml
+
+####################################
+# LOGS & TEMP
+####################################
+[Ll]og/
+[Ll]ogs/
+*.tmp
+*.cache
+*.pidb
+*.svclog
+
+####################################
+# DATABASE / LOCAL FILES
+####################################
+*.db
+*.sqlite
+*.sql
+
+####################################
+# MISC DEV TOOLS
+####################################
+.cr/
+__pycache__/
+*.pyc
+.ipch/
+.localhistory/
+.healthchecksdb
+MigrationBackup/
+.ionide/
+FodyWeavers.xsd

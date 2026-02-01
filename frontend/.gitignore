@@ -1,0 +1,39 @@
+####################################
+# LOGS
+####################################
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+####################################
+# DEPENDENCIES & BUILDS
+####################################
+node_modules/
+dist/
+dist-ssr/
+build/
+.cache/
+
+####################################
+# ENV FILES (SECRETS)
+####################################
+.env
+.env.*
+.env.local
+.env.*.local
+
+####################################
+# EDITORS & OS
+####################################
+.vscode/
+!.vscode/extensions.json
+.idea/
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sw?
