@@ -13,7 +13,7 @@ const ProtectedRoute = ({ children, requiredRole = null }) => {
 
   // 2️⃣ ADMIN CHECK
   if (requiredRole === "Admin" && role !== "Admin") {
-    return <Navigate to="/dashboard" replace />;
+    return <Navigate to="/app/dashboard" replace />;
   }
 
   // 3️⃣ CUSTOMER & NOT ONBOARDING COMPLETE

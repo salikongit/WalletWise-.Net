@@ -188,6 +188,7 @@ import { useNavigate, Link } from 'react-router-dom';
 import { authAPI } from '../services/api';
 import LoadingSpinner from '../components/LoadingSpinner';
 import { toast } from 'react-toastify';
+import { ArrowLeft } from 'lucide-react';
 
 // Material UI Icons
 import EmailOutlinedIcon from '@mui/icons-material/EmailOutlined';
@@ -307,6 +308,12 @@ const Register = () => {
           p-8
         "
       >
+        {/* Back Button */}
+        <Link to="/" className="inline-flex items-center gap-2 text-indigo-600 hover:text-indigo-800 mb-6 transition-colors">
+          <ArrowLeft size={20} />
+          Back to Home
+        </Link>
+        
         <h2 className="text-3xl font-bold text-center text-gray-900">
           Create Account
         </h2>

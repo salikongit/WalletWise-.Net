@@ -1,11 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-/* ============================================================
-   GOOGLE FONTS — Outfit (display/body) + Space Grotesk (numbers)
-   ============================================================ */
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600&display=swap');
 
 /* ============================================================
    SHADCN / TAILWIND CSS-VAR TOKENS  (unchanged)

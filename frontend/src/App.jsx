@@ -4,6 +4,11 @@ import ProtectedRoute from './routes/ProtectedRoute';
 import PublicRoute from './routes/PublicRoute';
 import MarketOverview from "./pages/MarketOverview";
 // Public Pages
+import HomePage from './pages/HomePage';
+import AboutPage from './pages/AboutPage';
+import ResearchPage from './pages/ResearchPage';
+import ContactPage from './pages/ContactPage';
+import ProjectExplorationPage from './pages/ProjectExplorationPage';
 import Login from './pages/Login';
 import Register from './pages/Register';
 import VerifyOtp from './pages/VerifyOtp';
@@ -40,6 +45,12 @@ function App() {
       />
       <Routes>
         {/* ------------------ PUBLIC ROUTES ------------------ */}
+        <Route path="/" element={<HomePage />} />
+        <Route path="/home" element={<HomePage />} />
+        <Route path="/about" element={<AboutPage />} />
+        <Route path="/research" element={<ResearchPage />} />
+        <Route path="/contact" element={<ContactPage />} />
+        <Route path="/explore-project" element={<ProjectExplorationPage />} />
         <Route path="/login" element={<PublicRoute><Login /></PublicRoute>} />
         <Route path="/register" element={<PublicRoute><Register /></PublicRoute>} />
         <Route path="/verify-otp" element={<PublicRoute><VerifyOtp /></PublicRoute>} />
@@ -57,14 +68,14 @@ function App() {
 
         {/* ------------------ CUSTOMER ROUTES ------------------ */}
         <Route
-          path="/"
+          path="/app"
           element={
             <ProtectedRoute requiredRole="Customer">
               <Layout />
             </ProtectedRoute>
           }
         >
-          <Route index element={<Navigate to="/dashboard" replace />} />
+          <Route index element={<Navigate to="/app/dashboard" replace />} />
 
           <Route
             path="dashboard"
@@ -142,7 +153,7 @@ function App() {
         </Route>
 
         {/* ------------------ FALLBACK ROUTE ------------------ */}
-        <Route path="*" element={<Navigate to="/login" replace />} />
+        <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
     </Router>
   );

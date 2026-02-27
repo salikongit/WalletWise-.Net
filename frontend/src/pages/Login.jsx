@@ -3,6 +3,7 @@ import { useNavigate, Link } from 'react-router-dom';
 import { authAPI } from '../services/api';
 import LoadingSpinner from '../components/LoadingSpinner';
 import { toast } from 'react-toastify';
+import { ArrowLeft } from 'lucide-react';
 
 // Material UI Icons
 import EmailOutlinedIcon from '@mui/icons-material/EmailOutlined';
@@ -82,6 +83,12 @@ const Login = () => {
         shadow-[0_20px_50px_rgba(0,0,0,0.15)]
         border border-white/30
       ">
+        {/* Back Button */}
+        <Link to="/" className="inline-flex items-center gap-2 text-indigo-600 hover:text-indigo-800 mb-6 transition-colors">
+          <ArrowLeft size={20} />
+          Back to Home
+        </Link>
+        
         {/* Header */}
         <div className="text-center mb-8">
           <h2 className="text-3xl font-bold text-gray-900">

@@ -6,7 +6,7 @@ import { removeToken, getRole, getUser } from '../utils/auth';
 import HomeIcon          from '@mui/icons-material/Home';
 import TrendingUpIcon    from '@mui/icons-material/TrendingUp';
 import CurrencyRupeeIcon from '@mui/icons-material/CurrencyRupee';
-import AttachMoneyIcon   from '@mui/icons-material/AttachMoney';
+
 import DescriptionIcon   from '@mui/icons-material/Description';
 import PeopleIcon        from '@mui/icons-material/People';
 import BarChartIcon      from '@mui/icons-material/BarChart';
@@ -30,12 +30,12 @@ const Layout = () => {
 
   /* Link definitions */
   const userLinks = [
-    { to: '/dashboard',            Icon: HomeIcon,          label: 'Dashboard' },
-    { to: '/emi-planner',          Icon: CurrencyRupeeIcon, label: 'EMI Planner' },
-    { to: '/investment-planner',   Icon: TrendingUpIcon,    label: 'Investments' },
-    { to: '/transactions',         Icon: DescriptionIcon,   label: 'Transactions' },
-    { to: '/investments/realtime', Icon: BarChartIcon,      label: 'Real-Time' },
-    { to: '/loans/amortization',   Icon: CreditCardIcon,    label: 'Amortization' },
+    { to: '/app/dashboard',            Icon: HomeIcon,          label: 'Dashboard' },
+    { to: '/app/emi-planner',          Icon: CurrencyRupeeIcon, label: 'EMI Planner' },
+    { to: '/app/investment-planner',   Icon: TrendingUpIcon,    label: 'Investments' },
+    { to: '/app/transactions',         Icon: DescriptionIcon,   label: 'Transactions' },
+    { to: '/app/investments/realtime', Icon: BarChartIcon,      label: 'Real-Time' },
+    { to: '/app/loans/amortization',   Icon: CreditCardIcon,    label: 'Amortization' },
   ];
 
   const adminLinks = [
@@ -68,7 +68,7 @@ const Layout = () => {
         <div className="modern-nav__container">
 
           {/* Logo - Extreme Left on Desktop, Center on Mobile */}
-          <Link to={isAdmin ? '/admin/dashboard' : '/dashboard'} className="modern-nav__logo">
+          <Link to="/" className="modern-nav__logo">
             <div className="modern-nav__logo-icon">
               <img src="/assets/logo.png" alt="WalletWise" />
             </div>
